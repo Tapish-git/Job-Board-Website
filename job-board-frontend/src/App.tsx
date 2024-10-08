@@ -21,7 +21,7 @@ const theme = createTheme({
 });
 
 // Main application component that sets up the layout and displays both the JobForm and JobList
-// The entire app is wrapped with a MUI ThemeProvider to apply custom styling and themes
+// The entire app is wrapped with a MUI ThemeProvider
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
