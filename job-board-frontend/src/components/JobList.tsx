@@ -50,7 +50,7 @@ const JobList = () => {
 
     // Sends a PATCH request to update the job status
     const handleStatusUpdate = (id: number, currentStatus: string) => {
-        const newStatus = currentStatus === 'open' ? ' closed' : 'open';
+        const newStatus = currentStatus === 'open' ? 'closed' : 'open';
         axios.patch(`${API_URL}/jobs/${id}`, { status: newStatus })
         .then(() => fetchJobs())
         .catch(error => console.error(error));
